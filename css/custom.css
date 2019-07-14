@@ -60,7 +60,8 @@
 	}
 	a {
 		font: 13px "med";
-		color: #081118;
+		color: #353944;
+		text-decoration: none;
 	}
 	.pr-1 {
 		padding-right: 10px;
@@ -69,7 +70,7 @@
 		padding-right: 20px;
 	}
 	.pr-3 {
-		padding-right: 25px;
+		padding-right: 24px;
 	}
 	.pr-4 {
 		padding-right: 40px;
@@ -134,7 +135,7 @@
 	display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 35px 10px 0 135px;
+    margin: 35px 30px 0 135px;
 }
 .fa-search {
 	color: #eee;
@@ -150,6 +151,13 @@
 
 .right-nav a {
 	text-transform: uppercase;
+	cursor: pointer;
+}
+.right-nav a:hover {
+	color:blue;
+}
+.right-nav a.contact-no:hover {
+	color: #fff;
 }
 .mobile-menu {
 	display: none;
@@ -188,6 +196,9 @@
 		border:none;
 		font-size: 12px;
 	}
+	.btn:hover {
+		cursor: pointer;
+	}
 /*southeast ends*/
 
 /*carolina*/
@@ -198,14 +209,15 @@
 		background: #fff;
 	    padding: 20px 35px;
 	    margin-right: 80px;
+	    cursor: pointer;
 	}
-	.section-card-orange {
+	.section-card.active {
 		background: #edab5d;
 		padding: 20px 35px;
 	    margin-right: 80px;
 	}
-	.section-card-orange h6,
-	.section-card-orange p {
+	.section-card.active h6,
+	.section-card.active p {
 		color:#fff;
 	} 
 /*carolina ends*/
@@ -252,17 +264,27 @@ footer .d-flex {
     flex-direction: row;
     align-items: center;
 }
-.foot-img img {
-	height: 30px;
-	width: 30px;
+footer svg {
+	margin-right: 22px;
+}
+footer svg:last-child {
+	margin-right: 0;
 }
 footer p.follow {
 	font-size: 13px;
     text-transform: uppercase;
 }
-footer p {
+footer p,
+footer a {
 	font: 12px "lgt";
     color: #9da5b0;
+}
+footer svg path:hover {
+    fill: #000;
+    cursor: pointer;
+}
+footer a:hover {
+    color: #000;
 }
 /*footer ends*/
 
@@ -308,7 +330,7 @@ footer p {
 		font-size: 35px;
 	}
 	.section-card,
-	.section-card-orange {
+	.section-card.active {
 		margin-right: 0;
 	}
 	
